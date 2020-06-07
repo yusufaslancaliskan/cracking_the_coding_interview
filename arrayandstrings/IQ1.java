@@ -4,6 +4,9 @@ package com.cosef.ctci.arrayandstrings;
 public class IQ1 {
 
     public static boolean solution(String s) {
+        if(s.length() > 256)
+            return false;
+
         boolean[] bitArray = new boolean[256];
 
         for (int i = 0; i < s.length(); i++) {
