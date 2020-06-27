@@ -1,23 +1,19 @@
 package com.cosef.ctci;
 
-import com.cosef.ctci.recursiveandynamic.RD1;
-import com.cosef.ctci.recursiveandynamic.RD2;
-
-import java.util.Stack;
+import com.cosef.ctci.linkedlists.IQ6;
+import com.cosef.ctci.linkedlists.Node;
 
 public class Main {
 
     public static void main(String[] args) {
-        int[][] arr = {
-                {0, 0, 1, 0, 0},
-                {0, 0, 0, 0, 0},
-                {0, 0, 0, 0, 1},
-                {0, 1, 0, 1, 0},
-                {0, 1, 0, 0, 0},
-                {0, 0, 0, 0, 1},
-                {0, 0, 1, 0, 0}
-        };
-        Stack m = new Stack();
-        System.out.println(RD2.solution(arr, m, false));
+        Node node1 = new Node(7);
+        node1.addTheTail(1);
+        node1.addTheTail(3);
+        node1.addTheTail(6);
+        node1.addTheTail(3);
+        node1.addTheTail(1);
+        node1.addTheTail(7);
+
+        System.out.println(IQ6.solution(node1));
     }
 }
